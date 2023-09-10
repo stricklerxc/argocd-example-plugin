@@ -1,0 +1,3 @@
+#!/bin/bash
+
+IMAGE_TAG=$PARAM_IMAGE_TAG erb $PARAM_MANIFEST_PATH
