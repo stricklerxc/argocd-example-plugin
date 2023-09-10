@@ -1,0 +1,16 @@
+project: default
+source:
+  repoURL: 'git@github.com:stricklerxc/argocd-example-plugin.git'
+  path: .
+  targetRevision: HEAD
+  plugin:
+    name: my-plugin-v1.0
+    parameters:
+      - name: image-tag
+        string: v1.0
+      - name: manifest-path
+        string: test-app/*
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: default
+
