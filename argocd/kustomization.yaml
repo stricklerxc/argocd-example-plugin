@@ -1,5 +1,6 @@
 resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.8.3/manifests/install.yaml
+  - ingress.yaml
 
 patches:
   - path: insecure_server.yaml
